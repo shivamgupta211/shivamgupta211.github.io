@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"
+baseurl = "https://shivamgupta211.github.io/blog/"
 title = "SiteTitle"
 theme = "hugo_theme_aglaus"
 
