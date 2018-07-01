@@ -1,6 +1,7 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
   <div class="my-auto" id="skills-content">
-    <h2 class="mb-5">Skills</h2>
+    <h2 class="">Skills</h2>
+    <h5>Which I have gained over the past 5+ years</h5>
     {{ range $.Site.Data.skills }}
         <div class="subheading mb-3 skills-heading">{{ .grouping }}</div>
             <ul>
@@ -8,7 +9,7 @@
                 {{ if isset . "name" }}
                     <li class="list-inline-item">
                       <i class="devicons devicons-{{ cond (in $.Site.Data.devicons (lower .name)) (lower .name) "terminal_badge" }}"></i>
-                      <a href="{{.link}}">{{ .name }}</a>
+                      <a href="{{.link}}" target="_blank">{{ .name }}</a>
                     </li>
                 {{ else }}
                   <li class="list-inline-item">

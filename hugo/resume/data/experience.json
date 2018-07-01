@@ -1,20 +1,23 @@
 [
     {
-        "role":"Boss man",
-        "company":"Current Company LTD",
-        "summary":"Led in development of fast paced software teams.",
-        "range":"February 2016 - Present"
+        "role":"Software Engineer",
+        "company":"Intelifai Technologies (StartUp)",
+        "responsibilities": "Handling complete End-to-End web platform, integrating CI/CD pipeline, managing Docker swarm cluster hosted on Microsoft Azure cloud.",
+        "summary":"Building highly scalable SaaS platform for developers to prototype, build and publish voice applications for Amazon Alexa, Google Assistant, Microsoft Cortana etc.",
+        "range":"July 2017 - Present"
     },
     {
-        "role":"Developer",
-        "company":"Current Company LTD",
-        "summary":"Expedited the synergies of collaborative agile tooling.",
-        "range":"March 2014 - February 2016"
+        "role":"Full Stack Developer",
+        "company":"AreteCode Tech Pvt Ltd. (StartUp)",
+        "responsibilities": "Handled complete Front End Application part of product’s web portal and leading a team of 3 software developers.",
+        "summary":"AreteCode technologies have SaaS product named School Sandesh. It’s a web and mobile based communication channel for school. It aims to minimize the communication gap between the School and Parents.",
+        "range":"August 2016 - June 2017"
     },
     {
-        "role":"Developer",
-        "company":"Previous Company Inc.",
-        "summary":"Implemented continuous devops pipelines automationing",
-        "range":"February 2013 - March 2014"
+        "role":"Web Developer",
+        "company":"Freelancer",
+        "responsibilities": "",
+        "summary":"I had successfully completed many full projects and few minor modules based on the customer requirements. I have been using mainly LAMP Stack to build simple to complex as well as elegant web applications.",
+        "range":"June 2013 - July 2016"
     }
 ]

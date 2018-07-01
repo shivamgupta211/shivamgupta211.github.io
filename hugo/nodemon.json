@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "ignore": ["blog/public", "resume/public"],
+  "ext": "toml js css md json",
+  "watch": ["hugo/"]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "shivamgupta211.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "server": "./build.sh && http-server ../dist/",
+      "build:dev": "nodemon --exec \"npm run server\"",
+      "build:prod": "./prod.sh"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/shivamgupta211/shivamgupta211.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/shivamgupta211/shivamgupta211.github.io/issues"
+    },
+    "homepage": "https://github.com/shivamgupta211/shivamgupta211.github.io#readme",
+    "devDependencies": {
+      "nodemon": "^1.17.5"
+    }
+  }
+  

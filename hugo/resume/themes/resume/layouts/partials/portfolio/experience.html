@@ -7,6 +7,7 @@
             <h3 class="mb-0">{{ .role }}</h3>
             <div class="subheading mb-3">{{ .company }}</div>
             <p>{{ .summary }}</p>
+            {{ if .responsibilities }}<p class="mb-6">What I do: {{ .responsibilities }}</p>{{ end }}
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">{{ .range }}</span>

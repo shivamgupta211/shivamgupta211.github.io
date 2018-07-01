@@ -1,50 +1,52 @@
-baseURL = "https://shivamgupta211.github.io/"
+baseURL = "http://shivamgupta211.github.io"
 languageCode = "en-us"
-title = "Eddie Webb"
+title = "Shivam Gupta | Software Engineer"
 theme = "resume"
 
 [params]
-    firstName = "Eddie"
-    lastName = "Webb"
-    address = "Rollinsford, NH"
-    phone = "1-555-555-1234"
-    contactNote = "Dev Tools Engineer"
-    profileImage = "img/TechChat.png"
-    email = "email@domain.com"
-    description = "Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud."
+    firstName = "Shivam"
+    lastName = "Gupta"
+    address = "Gurugram, Harayana"
+    phone = "+91 75700-11066"
+    role = "Software Engineer"
+    contactNote = "Software Engineer"
+    title = "Shivam Gupta | Software Engineer"
+    profileImage = "img/shivamgupta_profile.png"
+    email = "shivamgupta211@gmail.com"
+    description = "Software Engineer with experience building highly sclable SaaS products."
     favicon = "images/favicon.ico"
     # what sections
     showSkills = true
-    showProjects = true
-    showOpenSource = true
-    showPublications = true
+    showBlogs = false
+    showProjects = false
+    showOpenSource = false
+    showPublications = false
     showExperience = true
     showEducation = true
 
-    showQr = true
+    showQr = false
 
 [[params.handles]]
     name = "LinkedIn"
-    link = "https://www.linkedin.com/in/edwardwebb/"
+    link = "https://www.linkedin.com/in/shivamgupta211/"
 
+[[params.handles]]
+    name = "Twitter"
+    link = "https://www.twitter.com/in/shivamgupta211/"
 
 [[params.handles]]
     name = "GitHub"
-    link = "https://github.com/eddiewebb/"
-
-[[params.handles]]
-    name = "Bitbucket"
-    link = "https://bitbucket.org/eddiewebb/"
+    link = "https://github.com/shivamgupta211/"
 
 [[params.handles]]
     name = "Stack Overflow"
-    link = "https://stackoverflow.com/users/story/82880"
+    link = "https://stackoverflow.com/users/story/5547512"
     icon = "stack-overflow"
 
 [[params.handles]]
-    name = "Keybase"
-    link = "https://keybase.io/edwardawebb"
-    icon = "key"
+    name = "Google+"
+    link = "https://plus.google.com/u/0/113750680604298174547"
+    icon = "google-plus"
 
 [params.google.analytics]
-    trackerID = "XX-123446-01"
+    trackerID = ""

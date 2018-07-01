@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "ignore": ["*"],
+  "ext": "toml js css md",
+  "watch": ["hugo/"]
+}
