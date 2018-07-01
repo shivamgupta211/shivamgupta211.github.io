@@ -65,8 +65,8 @@
     "grouping": "DevOps Tools",
     "skills": [
         { "name": "Git", "link": "https://git-scm.com/" },
-        { "name": "Gitlab", "link": "https://gitlab.com/" },
-        { "name": "CI/CD", "link": "https://www.docker.com/use-cases/cicd" }
+        { "name": "Gitlab CI/CD", "link": "https://about.gitlab.com/features/gitlab-ci-cd/" },
+        { "name": "Circle CI", "link": "https://circleci.com/" }
     ]
   },
   {
