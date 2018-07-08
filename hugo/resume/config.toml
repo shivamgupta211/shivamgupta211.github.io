@@ -13,7 +13,7 @@ theme = "resume"
     title = "Shivam Gupta | Software Engineer"
     profileImage = "img/shivamgupta_profile.png"
     email = "shivamgupta211@gmail.com"
-    description = "Software Engineer with experience building highly sclable SaaS products."
+    description = "Software Engineer with experience in building highly sclable SaaS products."
     favicon = "images/favicon.ico"
     # what sections
     showSkills = true

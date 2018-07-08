@@ -76,6 +76,21 @@ main {
 /* Parts:logo */
 .p-logo {
   font-family: Lobster, cursive;
+  overflow: hidden;
+}
+
+a.h-logo {float: right; line-height: 4rem !important;}
+
+a.main-p {
+  float: left;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-image: url({{ .Site.BaseURL }}img/shivamgupta_profile.png);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 #333 inset;
 }
 
 .p-logo a {
@@ -283,6 +298,11 @@ article .thumbnail {
   box-shadow: 0 0 3px 0 #333 inset;
   float: left;
   margin-right: 1rem;
+}
+
+article .article-image {
+  width: 100%;
+  height: auto;
 }
 
 article .summary {

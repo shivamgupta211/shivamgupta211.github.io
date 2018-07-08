@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "server": "./build.sh && http-server ../dist/",
+      "server": "./build.sh && http-server ../dist/ -p 4100",
       "build:dev": "nodemon --exec \"npm run server\"",
       "build:prod": "./prod.sh"
     },

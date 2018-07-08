@@ -1,12 +1,12 @@
 <article class="single article-{{ .Source.Path | md5 }}">
   <div class="header-wrapper">
-    <a href="{{ .Permalink }}" class="thumbnail" title="{{ .Title }}"></a>
+    <!-- <a href="{{ .Permalink }}" class="thumbnail" title="{{ .Title }}"></a> -->
+    <img class="article-image" src="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
     <header class="article-header">
       <div class="clearfix">
         <h1 class="title">{{ .Title }}</h1>
         <ul class="p-facts">
           <li><time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05JST" }}">{{ .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</time></li>
-          {{ with .Section }}<li><a href="{{ $.Site.BaseURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end }}
           {{ if eq (getenv "HUGO_ENV") "DEV" }}
           <li>{{ .WordCount }} Words</li>
           {{ if .IsDraft }}<li style="color: #2196f3;">DRAFT</li>{{ end }}
@@ -25,7 +25,8 @@
   <footer class="article-footer">
     <section>
       <ol class="p-crumb">
-        <li><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></li>
+        <li><a href="{{ .Site.Params.AbsUrl }}">{{ .Site.Params.Author.Name }}</a></li>
+        <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.MetaTitle }}</a></li>
         {{ with .Section }}
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ $.Site.BaseURL }}{{ . | urlize }}/" itemprop="url"><span itemprop="title">{{ . }}</span></a></li>
         {{ end }}

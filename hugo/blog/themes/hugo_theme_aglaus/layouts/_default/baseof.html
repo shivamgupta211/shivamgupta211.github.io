@@ -45,6 +45,7 @@
       <div class="l-container">
         <div class="h-logo p-logo">
           <a href="{{ .Site.BaseURL }}" class="h-logo">{{ .Site.Title }}</a>
+          <a href="{{ .Site.Params.AbsUrl }}" class="main-p"></a>
         </div>
       </div>
     </header>
@@ -55,17 +56,7 @@
 
     {{ block "footer_before" . }}{{ end }}
 
-    <footer class="l-footer">
-      <div class="l-container">
-        <p>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}<span class="h-logo">&copy; {{ .Site.Title }}</span>{{ end }}</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_aglaus" class="h-logo">Aglaus</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
-      </div>
-    </footer>
-
-    <a href="#" class="p-movetop" title="ページ上部へ戻る" rel="nofollow"></a>
+    <a href="#" class="p-movetop" title="Move to Top" rel="nofollow"></a>
   </body>
 </html>
 
