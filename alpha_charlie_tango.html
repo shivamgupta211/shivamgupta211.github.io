@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Shivam Gupta | Full Stack Devops Engineer | Encrpt </title>
+    <meta
+      property="og:title"
+      content="Shivam Gupta | Full Stack Devops Engineer"
+    />
+    <meta
+      property="og:image"
+      content="https://shivamgupta211.github.io/img/shivamgupta_profile.png"
+    />
+    <meta
+      name="description"
+      content="Full Stack Devops Engineer with experience in building highly sclable SaaS products."
+    />
+    <meta
+      property="og:description"
+      content="Full Stack Devops Engineer with experience in building highly sclable SaaS products."
+    />
+    <meta name="author" content="Shivam Gupta" />
+    <link rel="shortcut icon" type=image/png href=/img/favicon.png>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://shivamgupta211.github.io/css/resume.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://shivamgupta211.github.io/css/tweaks.css"
+      rel="stylesheet"
+    />
+    <meta name="generator" content="Hugo 0.42.2" />
+  </head>
+  <form class="form-horizontal">
+    <br/><br/>
+<div class="control-group">
+    <label class="control-label" for="password">Password</label>
+    <div class="controls">
+        <textarea id="password" style="height: 30px; width: 300px; padding: 5px;"></textarea>
+    </div>
+</div>
+    <br/>
+<div class="control-group">
+    <label class="control-label" for="text" id="text-label">Text</label>
+    <div class="controls">
+    <textarea id="text" style="height: 100px; width: 300px;padding: 5px;"></textarea>
+    </div>
+</div>
+    <br/>
+<div class="control-group">
+    <div class="controls">
+    <button id="encrypt" type="text">Encrypt</button>
+    <button id="decrypt" type="text">Decrypt</button>
+    </div>
+</div>
+    
+</form>
+
+    <br/>
+    <hr>
+    <br/>
+<textarea disabled="true" id="output" style="height: 100px; width: 300px;padding: 5px;"></textarea>
+
+    <br/>
+    <button id="copy_output">
+      Copy to clipboard
+    </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <script src="/js/resume.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "");
+
+    var password = $('#password'),
+    text = $('#text'),
+    enc = $('#encrypt'),
+    output = $('#output'),
+    dec = $('#decrypt'),
+    copy_output = $('#copy_output')
+    
+    enc.click(function(e) {
+      e.preventDefault();
+      output.val("")
+      var encryptedAES = CryptoJS.AES.encrypt(text.val(), password.val());
+      output.val(encryptedAES.toString())
+    })
+    
+  	dec.click(function(e) {
+      e.preventDefault();
+      var encryptedAES = text.val();
+      output.val("")
+      output.val(CryptoJS.AES.decrypt(encryptedAES, password.val()).toString(CryptoJS.enc.Utf8));
+    })
+    
+    copy_output.click(function(e) {
+    	e.preventDefault();
+      copyToClipboard('#output')
+    })
+    
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).val()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+    </script>
+  </body>
+</html>
