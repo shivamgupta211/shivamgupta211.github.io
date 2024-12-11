@@ -124,14 +124,15 @@
     
     enc.click(function(e) {
       e.preventDefault();
+      output.val("")
       var encryptedAES = CryptoJS.AES.encrypt(text.val(), password.val());
       output.val(encryptedAES.toString())
-      
     })
     
   	dec.click(function(e) {
       e.preventDefault();
       var encryptedAES = text.val();
+      output.val("")
       output.val(CryptoJS.AES.decrypt(encryptedAES, password.val()).toString(CryptoJS.enc.Utf8));
     })
     
